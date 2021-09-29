@@ -1,4 +1,5 @@
 import React from "react";
+import PostMain from "./post/PostMain";
 
 class Free extends React.Component {
   constructor(props) {
@@ -8,7 +9,11 @@ class Free extends React.Component {
     };
   }
   render() {
-    return <div>자유게시판</div>;
+    return (
+      <div>
+        <PostMain />
+      </div>
+    );
   }
 }
 

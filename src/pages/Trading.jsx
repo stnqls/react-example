@@ -1,4 +1,5 @@
 import React from "react";
+import PostMain from "./post/PostMain";
 
 class Trading extends React.Component {
   constructor(props) {
@@ -8,7 +9,11 @@ class Trading extends React.Component {
     };
   }
   render() {
-    return <div>트레이딩</div>;
+    return (
+      <div>
+        <PostMain />
+      </div>
+    );
   }
 }
 
