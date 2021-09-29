@@ -40,6 +40,7 @@ const App = () => {
   const toggleAccount = () => setNewAccount((prev) => !prev);
 
   const onGoogleClick = async (event) => {
+    console.log(event.target.name);
     const {
       target: { name },
     } = event;
@@ -48,6 +49,7 @@ const App = () => {
       provider = new firebaseInstance.auth.GoogleAuthProvider();
     }
     const data = await authService.signInWithPopup(provider);
+    //휴대기기의 경우 리디렉션을 사용할 것을 권장한다. signInWithRedirect();
     console.log(data);
   };
 
@@ -82,7 +84,7 @@ const App = () => {
       <button name="google" onClick={onGoogleClick}>
         구글 계정 로그인
       </button>
-      <button name="googleLogOut" onClick={onLogOutClick}>
+      <button name="google" onClick={onLogOutClick}>
         로그아웃
       </button>
     </div>
