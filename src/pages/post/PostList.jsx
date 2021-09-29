@@ -1,42 +1,50 @@
 import React from "react";
+import CommonTable from "../../components/CommonTable";
+import CommonTableColumn from "../../components/CommonTableColumn";
+import CommonTableRow from "../../components/CommonTableRow";
 
 const PostList = (props) => {
   return (
     <React.Fragment>
-      <table>
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>제목</th>
-            <th>등록일</th>
-            <th>조회수</th>
-            <th>추천수</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>첫번째 게시글</td>
-            <td>2020-09-29</td>
-            <td>6</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>두번째 게시글</td>
-            <td>2020-09-29</td>
-            <td>6</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>게시글3</td>
-            <td>2020-09-29</td>
-            <td>6</td>
-            <td>3</td>
-          </tr>
-        </tbody>
-      </table>
+      <CommonTable
+        headersName={["글번호", "제목", "등록일", "조회수", "추천수"]}
+      >
+        <CommonTableRow>
+          <CommonTableColumn>1</CommonTableColumn>
+          <CommonTableColumn>1번 게시물</CommonTableColumn>
+          <CommonTableColumn>2021-09-29</CommonTableColumn>
+          <CommonTableColumn>10</CommonTableColumn>
+          <CommonTableColumn>3</CommonTableColumn>
+        </CommonTableRow>
+        <CommonTableRow>
+          <CommonTableColumn>2</CommonTableColumn>
+          <CommonTableColumn>2번 게시물</CommonTableColumn>
+          <CommonTableColumn>2021-09-29</CommonTableColumn>
+          <CommonTableColumn>10</CommonTableColumn>
+          <CommonTableColumn>3</CommonTableColumn>
+        </CommonTableRow>
+        <CommonTableRow>
+          <CommonTableColumn>3</CommonTableColumn>
+          <CommonTableColumn>3번 게시물</CommonTableColumn>
+          <CommonTableColumn>2021-09-29</CommonTableColumn>
+          <CommonTableColumn>10</CommonTableColumn>
+          <CommonTableColumn>3</CommonTableColumn>
+        </CommonTableRow>
+        <CommonTableRow>
+          <CommonTableColumn>4</CommonTableColumn>
+          <CommonTableColumn>4번 게시물</CommonTableColumn>
+          <CommonTableColumn>2021-09-29</CommonTableColumn>
+          <CommonTableColumn>10</CommonTableColumn>
+          <CommonTableColumn>3</CommonTableColumn>
+        </CommonTableRow>
+        <CommonTableRow>
+          <CommonTableColumn>5</CommonTableColumn>
+          <CommonTableColumn>5번 게시물</CommonTableColumn>
+          <CommonTableColumn>2021-09-29</CommonTableColumn>
+          <CommonTableColumn>10</CommonTableColumn>
+          <CommonTableColumn>3</CommonTableColumn>
+        </CommonTableRow>
+      </CommonTable>
     </React.Fragment>
   );
 };
