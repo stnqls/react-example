@@ -16,21 +16,41 @@ class TabMenu extends React.Component {
     this.state = {
       menu: 0,
     };
+    this.changeMenu = this.changeMenu.bind(this);
   }
+
   render() {
     return (
       <div className="wrap">
         <div className="menuBar">
           <ul className="tabs">
-            <li>트레이딩</li>
-            <li>매매분석법</li>
-            <li>자유게시판</li>
+            <li
+              className={`${this.state.menu === 0 ? "active" : ""}`}
+              onClick={() => this.changeMenu(0)}
+            >
+              트레이딩
+            </li>
+            <li
+              className={`${this.state.menu === 1 ? "active" : ""}`}
+              onClick={() => this.changeMenu(1)}
+            >
+              매매분석법
+            </li>
+            <li
+              className={`${this.state.menu === 2 ? "active" : ""}`}
+              onClick={() => this.changeMenu(2)}
+            >
+              자유게시판
+            </li>
           </ul>
         </div>
         <div className="contentArea">{menuList[this.state.menu]}</div>
       </div>
     );
   }
+  changeMenu = (menuIndex) => {
+    this.setState({ menu: menuIndex });
+  };
 }
 
 export default TabMenu;

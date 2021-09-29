@@ -21,6 +21,10 @@ ul {
   cursor: pointer;
 }
 
+.wrap .menuBar .tabs li.active {
+  text-decoration: underline blue 5px;
+}
+
 .wrap .contentArea {
   padding: 20px;
   background-color: cornsilk;
