@@ -1,10 +1,12 @@
 import React from "react";
-import TabMenu from "./components/TabMenu";
+// import TabMenu from "./components/TabMenu";
+import Paginate from "./Paginate";
 
 function App() {
   return (
     <React.Fragment>
-      <TabMenu />
+      {/* <TabMenu /> */}
+      <Paginate />
     </React.Fragment>
   );
 }

@@ -1,0 +1,65 @@
+.board {
+  width: 1198px;
+}
+
+.head {
+}
+.head__row {
+  height: 53px;
+  padding: 17px 0;
+  box-sizing: border-box;
+}
+.head .first {
+  width: 197px;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.head__title {
+  width: 833px;
+}
+.head__date {
+  width: 168px;
+}
+.head__answer {
+  width: 100%;
+}
+
+.body {
+}
+.body__first {
+  width: 197px;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+.body__row {
+  padding-top: 14px;
+  padding-bottom: 13px;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+.body__row__arrow {
+  width: 104px;
+}
+.body__title {
+}
+.body__date {
+}
+.arrow--up {
+  width: 104px;
+  padding-right: 48px;
+  padding-left: 48.5px;
+  box-sizing: border-box;
+  height: 5px;
+  border-bottom: none;
+  cursor: pointer;
+}
+.answer {
+  display: none;
+}
+.answer__an {
+  background-color: #f8f8f8;
+  height: 107px;
+  padding-top: 15px;
+  padding-left: 207px;
+  box-sizing: border-box;
+}
